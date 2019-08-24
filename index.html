@@ -12,63 +12,92 @@
 </head>
 
 <body>
-    <!-- tablet Menu -->
-    <nav class="navbar navbar-expand-md navbar-light bg-light ">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
+    <div class="container-fluid">
+        <!-- tablet Menu -->
+        <nav class="navbar navbar-expand-md navbar-light bg-light d-none d-lg-flex">
+            <a class="navbar-brand" href="#">Le Ngoc Anh</a>
+            <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
                     <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Dropdown
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
+                    <a class="nav-link" href="#">Skill</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link disabled" href="#">Disabled</a>
+                    <a class="nav-link" href="#">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
                 </li>
             </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
+        </nav>
+        <!-- desktop menu -->
+        <div class="row no-gutters">
+            <div class="sidebar d-none d-sm-block d-md-block d-lg-none opened" id="sidebar">
+                <div class="sidebar__item sidebar__header"><a href="">Le Ngoc Anh</a></div>
+                <div class="sidebar__item sidebar__item__active"><a href="#"><i class="ti-home"></i> Home</a></div>
+                <div class="sidebar__item"><a href="#"><i class="ti-comment-alt"></i> Contact</a></div>
+                <div class="sidebar__item"><a href="#"><i class="ti-notepad"></i> Skill</a></div>
+                <div class="sidebar__item"><a href="#"><i class="ti-rocket"></i> Projects</a></div>
+            </div>
+            <div id="content" class="content ">
+                <button class=" d-none d-sm-block d-md-block d-lg-none" type="button" onclick="expandSidebar()" class="btn bg-dark btn-lg">
+                    <span class="ti-menu"></span>
+                </button>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt ratione accusamus, quo nisi soluta,
+                nam
+                exercitationem possimus corporis beatae reprehenderit deleniti dolor, unde suscipit. Iure vel
+                praesentium
+                fugiat sequi voluptates!
+                Consectetur, fugit vel! Et harum suscipit recusandae ullam impedit quas hic velit eveniet facilis
+                mollitia.
+                Earum dolorem, cum repudiandae eaque incidunt sapiente, sunt nisi dolore assumenda deleniti quaerat
+                molestias vitae?
+                Ex, consequuntur tempore eaque omnis at ipsum perspiciatis, atque eius sunt veritatis quidem itaque
+                neque
+                libero repudiandae. Eos nemo, praesentium, ex nostrum numquam fuga officiis voluptatibus laudantium ad
+                velit
+                dolores!
+                Aliquid repudiandae iure voluptatibus sunt enim odit ad natus atque itaque maxime tenetur, esse
+                voluptatem,
+                autem modi. Itaque ratione, mollitia laudantium, magni eveniet iste dolores amet possimus temporibus
+                aliquid
+                illum.
+                Facilis necessitatibus eum repellendus. Reiciendis temporibus aliquam fuga id, laudantium voluptatum
+                incidunt placeat velit, aut, odio consectetur qui. Autem laboriosam aperiam dolor dolorum consequatur,
+                atque
+                blanditiis eaque sit quaerat officiis.
+                Odio iure repellat alias sapiente nostrum ratione qui mollitia magni optio autem sunt maxime maiores
+                quas,
+                porro debitis est deserunt a doloribus neque suscipit eligendi? Quidem quasi reprehenderit nemo nobis.
+                Saepe at obcaecati accusamus asperiores laborum, molestias totam architecto. Libero culpa et, ipsum at,
+                laborum rerum vero ullam totam maiores officia, iusto nihil quasi voluptatem. Voluptas facere laudantium
+                iure inventore?
+                Aut explicabo ad sapiente ullam ipsam at doloribus eos placeat tempora, quibusdam, assumenda vero
+                architecto
+                cupiditate possimus incidunt laboriosam officiis non eaque tenetur, quidem reiciendis! Tenetur,
+                exercitationem maxime? Quidem, accusantium!
+                Officiis cumque harum tempore vitae quas dolor rerum, quam totam, vel, labore dolores animi laborum?
+                Expedita dolor illum eligendi temporibus quisquam inventore ratione modi numquam consequuntur enim,
+                ullam
+                odio nesciunt.
+                Similique culpa aliquid sint, rerum voluptate perspiciatis maxime expedita ipsum incidunt dolorum
+                sapiente
+                doloribus veniam pariatur. Accusantium voluptates voluptate fuga rem ducimus aspernatur placeat, nobis
+                repudiandae unde ab sed laborum?
+            </div>
         </div>
-    </nav>
-    <!-- desktop menu -->
-    <div class="sidebar-wrapper d-none d-lg-flex">
-        <div class="sidebar" id="sidebar">
-            <div class="sidebar__item sidebar__header"><a href="">Le Ngoc Anh</a></div>
-            <div class="sidebar__item sidebar__item__active"><a href=""><i class="ti-home"></i> Home</a></div>
-            <div class="sidebar__item"><a href=""><i class="ti-comment-alt"></i> Contact</a></div>
-            <div class="sidebar__item"><a href=""><i class="ti-notepad"></i> Skill</a></div>
-            <div class="sidebar__item"><a href=""><i class="ti-rocket"></i> Projects</a></div>
-        </div>
-    </div>
-    <!-- mobile menu -->
-    <div class="menumobile fixed-bottom d-flex d-sm-none">
-        <div class="menumobile__item menumobile__item__active"><a href="#"><i class="ti-home"></i> Home</a>
-        </div>
-        <div class="menumobile__item "><a href="#"><i class="ti-comment-alt"></i>Contact</a></div>
-        <div class="menumobile__item "><a href="#"><i class="ti-notepad"></i>Skill</a></div>
-        <div class="menumobile__item "><a href="#"><i class="ti-rocket"></i>Projects</a></div>
-    </div>
 
+        <!-- mobile menu -->
+        <div class="menumobile fixed-bottom d-flex d-sm-none">
+            <div class="menumobile__item menumobile__item__active"><a href="#"><i class="ti-home"></i> Home</a>
+            </div>
+            <div class="menumobile__item "><a href="#"><i class="ti-comment-alt"></i>Contact</a></div>
+            <div class="menumobile__item "><a href="#"><i class="ti-notepad"></i>Skill</a></div>
+            <div class="menumobile__item "><a href="#"><i class="ti-rocket"></i>Projects</a></div>
+        </div>
+        <!-- main content  -->
+    </div>
 
     <script>
         var menuItems = document.getElementsByClassName("menumobile__item");
@@ -78,6 +107,38 @@
                 current[0].className = current[0].className.replace(" menumobile__item__active", "");
                 this.className += " menumobile__item__active";
             })
+        }
+        var menuItems = document.getElementsByClassName("sidebar__item");
+        for (var i = 0; i < menuItems.length; i++) {
+            menuItems[i].addEventListener("click", function () {
+                var current = document.getElementsByClassName("sidebar__item__active");
+                current[0].className = current[0].className.replace(" sidebar__item__active", "");
+                this.className += " sidebar__item__active";
+            })
+        }
+    </script>
+    <script>
+        function expandSidebar() {
+            var contentElement = document.getElementById("content");
+            var sidebarElement = document.getElementById("sidebar");
+            var sidebarClassList = sidebarElement.classList;
+            var isClosed = "false";
+            for (var i = 0; i < sidebarClassList.length; i++) {
+                if (sidebarClassList[i] == "closed") {
+                    isClosed = "true";
+                }
+            }
+            if (isClosed == "true") {
+                contentElement.style.width = "66.666666%";
+                contentElement.style.marginLeft = "33.333333%";
+                sidebarElement.style.width = "33.333333%";
+                sidebarElement.className = sidebarElement.className.replace(" closed", " opened");
+            }else{
+                contentElement.style.width = "100%";
+                contentElement.style.marginLeft = "0%";
+                sidebarElement.style.width = "0%";
+                sidebarElement.className = sidebarElement.className.replace(" opened", " closed");
+            }
         }
     </script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
