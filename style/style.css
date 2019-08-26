@@ -24,6 +24,7 @@ body {
     top: 0;
     left: 0;
     width: 0%;
+    transition: ease-out 0.5s;
 }
 .sidebar__toggler{
     text-align: center;
@@ -99,15 +100,15 @@ body {
 /* content */
 .content {
     color: rgb(126, 123, 123);
+    transition: ease-out 0.5s;
 }
 @media all and (min-width: 576px) and (max-width: 767px) {
     .content {
         margin-left: 90px ;
-        transition: ease-out 0.5s;
+        
     }
     .sidebar{
         width: 90px ;
-        transition: ease-out 0.5s;
     }
     .sidebar__item__content{
         display: none;
@@ -139,5 +140,9 @@ body {
     .content{
         width: 100% !important;
         margin-left: 0 !important;
+    }
+    .sidebar{
+        width:0 !important;
+        overflow: hidden;
     }
 }
