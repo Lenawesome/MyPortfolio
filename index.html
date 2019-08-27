@@ -13,26 +13,31 @@
 
 <body>
     <div class="container-fluid">
-        <!-- desktop Menu -->
-        <nav class="navbar navbar-expand-md navbar-light bg-light d-none d-lg-flex">
-            <a class="navbar-brand" href="#">Le Ngoc Anh</a>
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Skill</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
-                </li>
-            </ul>
-        </nav>
-        <!-- table sidebar menu -->
         <div class="row no-gutters">
+            <!-- desktop Menu -->
+            <div id="menu-wrapper" class="menu-wrapper menu-wrapper-bg-black d-none d-lg-flex">
+                <nav class="menu-header d-flex mx-auto ">
+                    <div class="menu-brand">
+                        <a href="#home">Le Ngoc Anh</a>
+                    </div>
+                    <ul class="main-menu main-menu-right">
+                        <li class="main-menu-item">
+                            <a class="menu-link active" href="#home">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="#skill">Skill</a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="#project">Projects</a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!-- table sidebar menu -->
             <div class="sidebar" id="sidebar">
                 <!-- <div class="sidebar__item sidebar__header"><a href="">Le Ngoc Anh</a></div> -->
                 <div class="sidebar__toggler">
@@ -40,139 +45,48 @@
                         <span class="ti-menu"></span>
                     </button>
                 </div>
-                <div class="sidebar__item sidebar__item__active"><a href="#"><i class="ti-home"></i> <span
+                <div class="sidebar__item sidebar__item__active"><a href="#home"><i class="ti-home"></i> <span
                             class="sidebar__item__content">Home</span> </a></div>
-
-                <div class="sidebar__item"><a href="#"><i class="ti-comment-alt"></i> <span
-                            class="sidebar__item__content">Contact</span></a></div>
-
-                <div class="sidebar__item"><a href="#"><i class="ti-notepad"></i><span
+                <div class="sidebar__item"><a href="#skill"><i class="ti-notepad"></i><span
                             class="sidebar__item__content">Skill</span></a>
                 </div>
-                <div class="sidebar__item"><a href="#"><i class="ti-rocket"></i> <span
-                            class="sidebar__item__content">Projects
-                        </span></a>
-                </div>
+                <div class="sidebar__item"><a href="#project"><i class="ti-rocket"></i> <span
+                            class="sidebar__item__content">Projects</div>
+                </span></a>
+                <div class="sidebar__item"><a href="#contact"><i class="ti-comment-alt"></i> <span
+                            class="sidebar__item__content">Contact</span></a></div>
             </div>
-            <div id="content" class="content ">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt ratione
-                accusamus, quo nisi soluta,
-                nam
-                exercitationem possimus corporis beatae reprehenderit deleniti dolor, unde suscipit.
-                Iure vel
-                praesentium
-                fugiat sequi voluptates!
-                Consectetur, fugit vel! Et harum suscipit recusandae ullam impedit quas hic velit
-                eveniet facilis
-                mollitia.
-                Earum dolorem, cum repudiandae eaque incidunt sapiente, sunt nisi dolore assumenda
-                deleniti quaerat
-                molestias vitae?
-                Ex, consequuntur tempore eaque omnis at ipsum perspiciatis, atque eius sunt
-                veritatis quidem itaque
-                neque
-                libero repudiandae. Eos nemo, praesentium, ex nostrum numquam fuga officiis
-                voluptatibus laudantium ad
-                velit
-                dolores!
-                Aliquid repudiandae iure voluptatibus sunt enim odit ad natus atque itaque maxime
-                tenetur, esse
-                voluptatem,
-                autem modi. Itaque ratione, mollitia laudantium, magni eveniet iste dolores amet
-                possimus temporibus
-                aliquid
-                illum.
-                Facilis necessitatibus eum repellendus. Reiciendis temporibus aliquam fuga id,
-                laudantium voluptatum
-                incidunt placeat velit, aut, odio consectetur qui. Autem laboriosam aperiam dolor
-                dolorum consequatur,
-                atque
-                blanditiis eaque sit quaerat officiis.
-                Odio iure repellat alias sapiente nostrum ratione qui mollitia magni optio autem
-                sunt maxime maiores
-                quas,
-                porro debitis est deserunt a doloribus neque suscipit eligendi? Quidem quasi
-                reprehenderit nemo nobis.
-                Saepe at obcaecati accusamus asperiores laborum, molestias totam architecto. Libero
-                culpa et, ipsum at,
-                laborum rerum vero ullam totam maiores officia, iusto nihil quasi voluptatem.
-                Voluptas facere laudantium
-                iure inventore?
-                Aut explicabo ad sapiente ullam ipsam at doloribus eos placeat tempora, quibusdam,
-                assumenda vero
-                architecto
-                cupiditate possimus incidunt laboriosam officiis non eaque tenetur, quidem
-                reiciendis! Tenetur,
-                exercitationem maxime? Quidem, accusantium!
-                Officiis cumque harum tempore vitae quas dolor rerum, quam totam, vel, labore
-                dolores animi laborum?
-                Expedita dolor illum eligendi temporibus quisquam inventore ratione modi numquam
-                consequuntur enim,
-                ullam
-                odio nesciunt.
-                Similique culpa aliquid sint, rerum voluptate perspiciatis maxime expedita ipsum
-                incidunt dolorum
-                sapiente
-                doloribus veniam pariatur. Accusantium voluptates voluptate fuga rem ducimus
-                aspernatur placeat, nobis
-                repudiandae unde ab sed laborum?
-            </div>
-        </div>
 
-        <!-- mobile menu -->
-        <div class="menumobile fixed-bottom d-flex d-sm-none">
-            <div class="menumobile__item menumobile__item__active"><a href="#"><i class="ti-home"></i> Home</a>
+            <!-- mobile menu -->
+            <div class="menumobile fixed-bottom d-flex d-sm-none">
+                <a class="menumobile__item menumobile__item__active" href="#home"><i class="ti-home"></i> Home</a>
+                <a class="menumobile__item " href="#skill"><i class="ti-notepad"></i>Skill</a>
+                <a class="menumobile__item " href="#project"><i class="ti-notepad"></i>Projects</a>
+                <a class="menumobile__item " href="#contact"><i class="ti-notepad"></i>Contact</a>
             </div>
-            <div class="menumobile__item "><a href="#"><i class="ti-comment-alt"></i>Contact</a></div>
-            <div class="menumobile__item "><a href="#"><i class="ti-notepad"></i>Skill</a></div>
-            <div class="menumobile__item "><a href="#"><i class="ti-rocket"></i>Projects</a></div>
         </div>
         <!-- main content  -->
+        <div id="content" class="content ">
+            <!-- Home -->
+            <div class="page" id="home">
+                home
+            </div>
+            <div class="page" id="skill">
+                skill
+            </div>
+            <div class="page" id="project">
+                projects
+            </div>
+            <div class="page" id="contact">
+                contact
+            </div>
+        </div>
     </div>
 
     <script>
-        var menuItems = document.getElementsByClassName("menumobile__item");
-        for (var i = 0; i < menuItems.length; i++) {
-            menuItems[i].addEventListener("click", function () {
-                var current = document.getElementsByClassName("menumobile__item__active");
-                current[0].className = current[0].className.replace(" menumobile__item__active", "");
-                this.className += " menumobile__item__active";
-            })
-        }
-        var menuItems = document.getElementsByClassName("sidebar__item");
-        for (var i = 0; i < menuItems.length; i++) {
-            menuItems[i].addEventListener("click", function () {
-                var current = document.getElementsByClassName("sidebar__item__active");
-                current[0].className = current[0].className.replace(" sidebar__item__active", "");
-                this.className += " sidebar__item__active";
-            })
-        }
+        
     </script>
-    <script>
-        function expandSidebar() {
-            var contentElement = document.getElementById("content");
-            var sidebarElement = document.getElementById("sidebar");
-            var sidebarTxts = document.getElementsByClassName("sidebar__item__content");
-            var isClosed = "false";
-            if(getComputedStyle(sidebarTxts[0], null).display == "none") isClosed = "true";
-            if (isClosed == "true") {
-                // contentElement.style.width = "80%";
-                contentElement.style.marginLeft = "150px";
-                sidebarElement.style.width = "150px";
-                for (var i = 0; i < sidebarTxts.length; i++) {
-                    sidebarTxts[i].style.display = "block";
-                }
-            } else {
-                // contentElement.style.width = "100%";
-                contentElement.style.marginLeft = "90px";
-                sidebarElement.style.width = "90px";
-                for (var i = 0; i < sidebarTxts.length; i++) {
-                    // sidebarTxts[i].className = sidebarTxts[i].className.replace(" d-block","");
-                    sidebarTxts[i].style.display = "none";
-                }
-            }
-        }
-    </script>
+    <script src="js/active.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
     </script>
@@ -182,6 +96,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
     </script>
+    <script src="js/scroll.js"></script>
 </body>
 
 </html>
