@@ -20,10 +20,11 @@ body {
 
 /* Desktop menu */
 .menu-wrapper-bg-black {
-    background-color: rgba(0, 0, 0, 0.692);
+    background-color: rgba(0, 0, 0, 0);
     padding: 20px 0;
     width: 100%;
     position: fixed;
+    z-index: 999;
     transition: all 0.5s;
 }
 
@@ -72,7 +73,7 @@ a:hover {
     top: 0;
     left: 0;
     width: 0%;
-    transition: ease-out 0.5s;
+    /* transition: ease-out 0.5s; */
 }
 
 .sidebar__toggler {
@@ -223,10 +224,11 @@ input:checked+.slider:before {
 .content {
     color: rgb(126, 123, 123);
     transition: ease-out 0.5s;
+    padding: 50px;
 }
 
 .page {
-    height: 100%;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -243,6 +245,7 @@ input:checked+.slider:before {
 
     .sidebar {
         width: 90px;
+        transition: 1s;
     }
 
     .sidebar__item__content {
