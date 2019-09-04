@@ -8,6 +8,7 @@
 .container-fluid {
     padding: 0;
 }
+
 html {
     scroll-behavior: smooth;
 }
@@ -18,44 +19,51 @@ body {
 }
 
 /* Desktop menu */
-.menu-wrapper-bg-black{
+.menu-wrapper-bg-black {
     background-color: rgba(0, 0, 0, 0.692);
     padding: 20px 0;
     width: 100%;
     position: fixed;
     transition: all 0.5s;
 }
-.menu-header{
+
+.menu-header {
     width: 70%;
 }
 
-.menu-brand a{
+.menu-brand a {
     width: 20%;
     color: white;
 }
-.main-menu{
-    margin:0;
+
+.main-menu {
+    margin: 0;
     list-style: none;
     width: 80%;
 }
-.menu-link{
+
+.menu-link {
     display: inline-block;
     padding-left: 70px;
     color: white;
     text-decoration: none;
 }
-.menu-link.active{
+
+.menu-link.active {
     color: rgb(206, 156, 18) !important;
 }
-a:hover{
+
+a:hover {
     color: rgb(206, 156, 18);
     text-decoration: none;
 }
-.main-menu-right{
+
+.main-menu-right {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
 }
+
 /* Side bar */
 .sidebar {
     height: 100%;
@@ -66,11 +74,13 @@ a:hover{
     width: 0%;
     transition: ease-out 0.5s;
 }
-.sidebar__toggler{
+
+.sidebar__toggler {
     text-align: center;
     padding: 10px;
     margin-bottom: 20px;
 }
+
 .sidebar__item {
     border-top: 4px solid transparent;
 }
@@ -83,7 +93,7 @@ a:hover{
     overflow: hidden;
     display: flex;
     flex-direction: column;
-   align-items: center;
+    align-items: center;
     width: 100%;
     height: 10%;
     padding: 10px;
@@ -92,14 +102,84 @@ a:hover{
 .sidebar__item a:hover {
     text-decoration: none;
 }
-.sidebar__item a i{
+
+.sidebar__item a i {
     display: block;
     text-align: center;
 }
+
 .sidebar__item__active {
     border-top: 4px solid rgb(206, 156, 18);
     background-color: rgba(255, 255, 255, 0.233);
 }
+
+/* End sidebar */
+
+/* switch */
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 21px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #2196F3;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+/* end switch */
 
 /* Menu mobile */
 
@@ -136,6 +216,7 @@ a:hover{
     color: rgb(206, 156, 18);
     opacity: 1;
 }
+
 /* end-mobile-menu */
 
 /* content */
@@ -144,7 +225,7 @@ a:hover{
     transition: ease-out 0.5s;
 }
 
-.page{
+.page {
     height: 100%;
     display: flex;
     justify-content: center;
@@ -156,45 +237,54 @@ a:hover{
 /* media */
 @media all and (min-width: 576px) and (max-width: 767px) {
     .content {
-        margin-left: 90px ;
-        
+        margin-left: 90px;
+
     }
-    .sidebar{
-        width: 90px ;
+
+    .sidebar {
+        width: 90px;
     }
-    .sidebar__item__content{
+
+    .sidebar__item__content {
         display: none;
     }
 }
-@media all and (min-width: 768px) and (max-width: 991px){
+
+@media all and (min-width: 768px) and (max-width: 991px) {
     .content {
-        margin-left:150px ;
+        margin-left: 150px;
     }
-    .sidebar{
-        width:150px ;
+
+    .sidebar {
+        width: 150px;
     }
-    .sidebar__item__content{
+
+    .sidebar__item__content {
         display: block;
     }
 
 }
-@media all and (max-width:576px ){
-    .content{
+
+@media all and (max-width:576px) {
+    .content {
         width: 100% !important;
         margin-left: 0 !important;
     }
-    .sidebar{
-        width:0 !important;
+
+    .sidebar {
+        width: 0 !important;
         overflow: hidden;
     }
 }
-@media all and (min-width:992px){
-    .content{
+
+@media all and (min-width:992px) {
+    .content {
         width: 100% !important;
         margin-left: 0 !important;
     }
-    .sidebar{
-        width:0 !important;
+
+    .sidebar {
+        width: 0 !important;
         overflow: hidden;
     }
 }
