@@ -13,10 +13,6 @@ html {
     scroll-behavior: smooth;
 }
 
-body {
-    background-image: url("../images/Black-Background-Iphone-Wallpaper.jpg");
-    min-width: 500px;
-}
 
 /* Desktop menu */
 .menu-wrapper-bg-black {
@@ -223,15 +219,11 @@ input:checked+.slider:before {
 /* content */
 .content {
     color: rgb(126, 123, 123);
-    transition: ease-out 0.5s;
-    padding: 50px;
+    transition: 0.5s;
 }
 
 .page {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    min-height: 500px;
 }
 
 /* end-content */
@@ -240,12 +232,20 @@ input:checked+.slider:before {
 @media all and (min-width: 576px) and (max-width: 767px) {
     .content {
         margin-left: 90px;
+    }
 
+    .img-circle-wrapper {
+        width: 250px !important;
+        height: 250px !important;
+    }
+
+    .page {
+        padding: 1em !important;
     }
 
     .sidebar {
         width: 90px;
-        transition: 1s;
+        transition: 0.5s;
     }
 
     .sidebar__item__content {
@@ -258,14 +258,24 @@ input:checked+.slider:before {
         margin-left: 150px;
     }
 
+    .page {
+        padding: 1em !important;
+        align-items: initial;
+    }
+
     .sidebar {
         width: 150px;
+        transition: 0.5s;
     }
 
     .sidebar__item__content {
         display: block;
     }
 
+    .img-circle-wrapper {
+        width: 250px !important;
+        height: 250px !important;
+    }
 }
 
 @media all and (max-width:576px) {
@@ -274,9 +284,25 @@ input:checked+.slider:before {
         margin-left: 0 !important;
     }
 
+    .page {
+        padding:5px 0 0 0 !important;
+        justify-items: center;
+        align-items: initial;
+    }
+
     .sidebar {
         width: 0 !important;
         overflow: hidden;
+    }
+
+    .img-circle-wrapper {
+        width: 200px !important;
+        height: 200px !important;
+    }
+
+    .description {
+        width: 70%;
+        margin: 0 auto;
     }
 }
 
@@ -289,5 +315,6 @@ input:checked+.slider:before {
     .sidebar {
         width: 0 !important;
         overflow: hidden;
+        transition: 0.5s;
     }
 }
